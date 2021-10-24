@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.starter{
+    background-image: url(https://frontiersinblog.files.wordpress.com/2020/01/frontiers-psychology-stray-dogs-human-cues-behavior.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 85vh;
+    background-size: 100%;
+    animation: imgUpdate ease-in-out 40s infinite;
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -1px 4px 4px;
+}
+
+.fact-box{
+    width: 90%;
+    background-color: #e7e6e6;
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.static-txt{
+    font-size: 60px;
+    font-weight: 750;
+    color: rgb(4, 204, 4);
+    margin-bottom: 25px;
+    text-shadow: 0px 2px 6px #474343;
+}
+
+.dynamic-txt{
+    font-size: 60px;
+    font-weight: 750;
+    color: black;
+    list-style: none;
+    height: 100px;
+    line-height: 100px;
+    overflow: hidden;
+    text-shadow: 0px 2px 6px #474343;
+}
+
+.dynamic-txt li{
+    animation: slide 15s steps(3) infinite;
+    position: relative;
+    top: 0;
+}
+
+.dynamic-txt li span{
+    position: relative;
+}
+
+.dynamic-txt li span::after{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    border-left: 2px solid black;
+    animation: typing 5s steps(33) infinite;
+    background-color: #e7e6e6;
+
+}
+
+@keyframes slide {
+    100%{
+        top: -305px;
+    }
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+@keyframes imgUpdate {
+    0%{
+        background-image: url(http://d3e1m60ptf1oym.cloudfront.net/01ebcdaf-c4f6-4a3b-ac7b-6979410a4942/Brett-Cole-India-02531_xgaplus.jpg);
+    }
+    33%{
+        background-image: url(https://www.delhiwire.com/wp-content/uploads/2019/04/Woman-fined-Rs-3.60-lakh-by-housing-society-in-Mumbai-for-feeding-stray-dogs.jpg);
+    }
+    66%{
+        background-image: url(https://media.pri.org/s3fs-public/styles/story_main/public/story/images/RTRA7NM.jpg?itok=8XkCCjXe);
+    }
+    100%{
+        background-image: url(http://d3e1m60ptf1oym.cloudfront.net/01ebcdaf-c4f6-4a3b-ac7b-6979410a4942/Brett-Cole-India-02531_xgaplus.jpg);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .starter{
+        height: 30vh;
+    }
+    .fact-box{
+        display: none;
+    }
+}

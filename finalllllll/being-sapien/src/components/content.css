@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Content1{
+    display: flex;
+    margin-top: 10vh;
+}
+
+.Content1__left{
+    background-color: transparent;
+    width: 35%;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.Content1__left h1{
+    font-size: 6rem;
+    font-weight: 600;
+    color: rgb(4, 204, 4);
+
+}
+
+.Content1__right{
+    background-color: rgb(4, 204, 4);
+    width: 65%;
+    border-radius: 56px 1px 56px 1px;
+    box-shadow: 5px 0px 15px 0px black;
+}
+
+.Content1__right h2{
+    font-size: 4rem;
+    line-height: 6rem;
+    color: white;
+}
+
+.Content1__right__txt{
+    font-size: 1.5rem;
+    margin: 0px 20px;
+    color: white;
+    font-weight: 100;
+}
+
+.Content1__right__txt h4{
+    font-size: 1.7rem;
+    text-align: center;
+    color: white;
+    line-height: 5rem;
+}
+
+.Content2{
+    display: flex;
+    margin-top: 20vh;
+}
+
+.Content2__right{
+    background-color: transparent;
+    width: 35%;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.Content2__right h1{
+    font-size: 6rem;
+    font-weight: 600;
+    color: rgb(4, 204, 4);
+
+}
+
+.Content2__left{
+    background-color: rgb(4, 204, 4);
+    width: 70%;
+    border-radius: 50px 1px 50px 1px;
+    box-shadow: 1px 1px 20px black;
+}
+
+.Content2__left__list{
+    list-style: none;
+    color: white;
+}
+
+.Content2__left__list h3{
+    font-size: 3rem;
+    margin-top: 5vh;
+}
+
+.Content2__left__list span{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.responsive{
+    display: none;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .Content1{
+        display: none;
+    }
+
+    .Content2{
+        display: none;
+    }
+    
+    .responsive{
+        display: block;
+    }
+
+}
