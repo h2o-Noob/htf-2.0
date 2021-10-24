@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## To start run following commands in powershell terminal
-npx create-react-app
-npm i react-router-dom
-npm i firebase
+npx create-react-app.\
+npm i react-router-dom.\
+npm i firebase.\
 
 
 ## Available Scripts
