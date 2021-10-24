@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## To start run following commands in powershell terminal
+npx create-react-app
+npm i react-router-dom
+npm i firebase
+
+
 ## Available Scripts
 
 In the project directory, you can run:
